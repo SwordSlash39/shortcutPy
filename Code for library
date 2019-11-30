@@ -1,0 +1,89 @@
+'''Use this and if you need, if <figureList(index)>, while <figureList(index)>'''
+
+global one_list, stop
+one_list = []
+stop = False
+
+
+def figureList(index):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        return one_list[index - 1]
+
+
+def editList(index, edit):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        one_list[index - 1] = edit
+
+
+def x_y_equal(x, y, index):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        if x == y:
+            one_list[index - 1] = True
+        else:
+            one_list[index - 1] = False
+
+
+def getInput(question, index):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        one_list[index - 1] = input(question)
+
+
+def transformInt(index):
+    if index > len(one_list):
+        while len(one_list) < index:
+            one_list.append(0)
+    one_list[index - 1] = int(one_list[index - 1])
+
+
+def transformFloat(index):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        one_list[index - 1] = float(one_list[index - 1])
+
+
+def transformStr(index):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        one_list[index - 1] = str(one_list[index - 1])
+
+
+def transformBool(index):
+    if not stop:
+        if index > len(one_list):
+            while len(one_list) < index:
+                one_list.append(0)
+        one_list[index - 1] = bool(one_list[index - 1])
+
+
+def show(txt, havEnd=1):
+    if not stop:
+        if havEnd == 0:
+            print(txt, end="")
+        else:
+            print(txt)
+
+
+def stopCode():
+    global stop
+    stop = True
+
+
+def continueCode():
+    global stop
+    stop = False
