@@ -1,5 +1,3 @@
-'''Use this and if you need, if <figureList(index)>, while <figureList(index)>'''
-
 global one_list, stop
 one_list = []
 stop = False
