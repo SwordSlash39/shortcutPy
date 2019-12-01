@@ -2,3 +2,7 @@ figureList(index) - This searches the <index> item of the builtin list and retur
 editList(index, edit) - This edits the <index> item of the builtin list and changes it into <edit>
 x_y_equal(x, y, index) - This checks that if <x> is equal to <y> and store either 'True' or 'False' into the <index> item of the list.
 getInput(question, index) - This asks the user <question> and adds the user's answer into the <index> item of the list.
+transformInt(index) - This changes the <index> item of the list into an integer and replace the <index> item of the list into the int form
+transformFloat(index) - This changes the <index> item of the list into an float and replace the <index> item of the list into the float form
+transformStr(index) - This changes the <index> item of the list into an string and replace the <index> item of the list into the str form
+transformBool(index) - This changes the <index> item of the list into an boolean and replace the <index> item of the list into the bool form
