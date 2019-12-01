@@ -1,0 +1,4 @@
+figureList(index) - This searches the <index> item of the builtin list and returns the value of it. The first item of the list is index 1.
+editList(index, edit) - This edits the <index> item of the builtin list and changes it into <edit>
+x_y_equal(x, y, index) - This checks that if <x> is equal to <y> and store either 'True' or 'False' into the <index> item of the list.
+getInput(question, index) - This asks the user <question> and adds the user's answer into the <index> item of the list.
